@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    
+    <style>
+      th.nomer{
+        width:.1%;
+      }
+      th{
+        width:10%;
+      }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+      <div class="bg-white m-3 shadow">
+        
+         <!-- Form -->
+          <form>
+          <div class="container-fluid border-bottom p-5">
+            <div class="row">
+               <!-- Form Sebelah Kiri -->
+                <div class="col-sm-6">            
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">No. Pembelian</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": PO-000001">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Tanggal Kirim</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": 2017-02-15">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Oleh Karyawan</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": Admin1">
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Supplier</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": PT. SHP TOYS">
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Type bayar</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": Cash (Tunai)">
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Keterangan</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": Sudah di orderkan,..">
+                    </div>
+                  </div>                     
+                </div>
+
+                <!-- Form Sebelah Kanan -->
+                <div class="col-sm-6">            
+                   <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Tanggal Pembelian</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": 13-02-2017">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Tanggal Terima</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": 17/02/2017, 17/02/2017">
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Referensi</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": Tidak ada referensi">
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Kepada / Attention</label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" value=": abc@gmail.com">
+                    </div>
+                  </div>        
+                </div>      
+            </div>
+          </div>
+        </form>
+    <!-- ----------------------------------- -->
+
+
+
+        <!-- Form -->
+        <form>
+        <div class="container-fluid p-5 border-bottom">
+          <div class="row">
+             <!-- Form Sebelah Kiri -->
+              <div class="col-sm-6">            
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">No Terima PO</label>
+                  <div class="col-sm-5">
+                    <input type="text" class="form-control">
+                  </div>
+                </div> 
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">No Surat Jalan</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                  </div>
+                </div> 
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Pengirim Barang</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                  </div>
+                </div> 
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Keterangan</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control"></textarea>
+                  </div>
+                </div>        
+              </div>
+
+              <!-- Form Sebelah Kanan -->
+              <div class="col-sm-6">            
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Tanggal Terima</label>
+                  <div class="col-sm-9">
+                     <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                  </div>
+                </div> 
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Penerima Barang</label>
+                  <div class="col-sm-9">
+                    <select class="form-control">
+                      <option>a</option>
+                      <option>b</option>
+                      <option>c</option>
+                    </select>
+                  </div>
+                </div>        
+              </div>      
+          </div>
+        </div>
+      </form>
+      <!-- ----------------------------------- -->
+
+      <!-- Bagian Table -->
+      <div class="container-fluid p-5">
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th class="nomer">No</th>
+              <th class="no">a</th>
+              <th class="no">b</th>
+              <th class="no">c</th>
+              <th class="no">d</th>
+              <th class="no">e</th>
+              <th class="no">f</th>
+              <th class="no">g</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+              <td>g</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+              <td>g</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+              <td>g</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+  </body>
+</html>
